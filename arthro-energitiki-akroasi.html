@@ -347,7 +347,11 @@ html:not(.js) .sv{opacity:1;transform:none}
 .grp{background:var(--sand)}
 .gp-g{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(30px,5vw,80px);align-items:center}
 .gp-p{color:#3D3F43;margin:22px 0;text-wrap:pretty}
-.gq{margin:0 0 30px;padding:20px 24px;border-left:3px solid var(--g2);background:rgba(255,252,247,.7);border-radius:0 18px 18px 0}
+.press{display:flex;flex-direction:column;gap:6px;margin:0 0 28px;padding:16px 20px;border-radius:16px;background:rgba(255,252,247,.7);box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;color:#3D3F43}
+.press-k{font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--l)}
+.press a{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--g);text-decoration:none;border-bottom:1px solid currentColor;align-self:flex-start}
+.press a svg{width:14px;height:14px}
+.gq{margin:0 0 24px;padding:20px 24px;border-left:3px solid var(--g2);background:rgba(255,252,247,.7);border-radius:0 18px 18px 0}
 .gq p{font:italic 400 20px/1.45 var(--serif)}
 .gq cite{display:block;font-style:normal;font-size:13px;color:var(--mute);margin-top:8px;font-weight:600}
 .circ{width:100%;max-width:600px;margin-inline:auto;overflow:visible}
@@ -412,6 +416,8 @@ html:not(.js) .sv{opacity:1;transform:none}
 .ar-t{font:400 clamp(24px,2.4vw,32px)/1.15 var(--serif)}
 .ar-t small{font:600 13px var(--sans);color:var(--mute)}
 .ar-d{color:var(--mute);font-size:15.5px;max-width:720px}
+.ar-by{font-size:13px;font-weight:600;color:var(--g)}
+.ar-by-l{color:var(--l)}
 .ar-pub{align-self:flex-start;margin-top:4px;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--ll);color:var(--l)}
 .ar-m{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--mute);white-space:nowrap}
 .ar-m svg{width:20px;height:20px;transition:transform .4s var(--ease)}
@@ -574,6 +580,10 @@ html:not(.js) .intro,.intro-done .intro{display:none}
 .at-h1{font:400 clamp(38px,5.4vw,64px)/1.06 var(--serif);letter-spacing:-.015em;text-wrap:balance}
 .at-sub{font:italic 400 22px/1.4 var(--serif);color:var(--mute);margin-top:14px}
 .at-by{display:flex;align-items:center;flex-wrap:wrap;gap:12px 14px;margin:30px 0 40px;padding-bottom:28px;border-bottom:1px solid var(--line);font-size:14px}
+.at-g .at-mono{background:var(--g2)}
+.at-g .at-ph{box-shadow:0 0 0 4px var(--paper),0 0 0 6px var(--g2)}
+.at-g .at-card .kick{color:var(--g)}
+.at-g .at-ct .btn{background:var(--g)}
 .at-mono{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--l2);color:#fff;font:400 24px/1 var(--serif)}
 .at-by>span:nth-of-type(1){display:flex;flex-direction:column}
 .at-by>span:nth-of-type(1) span{color:var(--mute)}
@@ -704,7 +714,7 @@ html:not(.js) .intro,.intro-done .intro{display:none}
 <a class="btn sm hd-cta" href="index.html#epikoinonia"><span data-en="Book">Ραντεβού</span></a>
 <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Μενού" data-en-aria="Menu"><i></i><i></i><i></i></button></div>
 </div></header>
-<main id="main" class="art-main"><article class="at" style="--c:#5C83A3">
+<main id="main" class="art-main"><article class="at at-l" style="--c:#5C83A3">
 <header class="at-hd"><a class="at-back" href="index.html#arthra">← Όλα τα άρθρα</a><p class="kick">Γονείς & παιδιά</p><h1 class="at-h1">Επικοινωνία στην οικογένεια – Ενεργητική ακρόαση</h1>
 <p class="at-by"><span class="at-mono" aria-hidden="true">Λ</span><span><b>Λουκία Μιχέλη</b><span>Ψυχολόγος – Παιγνιοθεραπεύτρια</span></span><span class="at-mins">7′ ανάγνωση</span></p></header>
 <div class="at-body"><p>Η επικοινωνία με τους άλλους δεν είναι πάντα εύκολη υπόθεση. Υπάρχουν φορές που νιώθουμε ότι ο άλλος δεν μας καταλαβαίνει, αν και φαίνεται να μας ακούει. Υπάρχουν φορές που τα λόγια μας παρερμηνεύονται αν και νιώθαμε ξεκάθαροι στο τι είπαμε.</p>
@@ -753,12 +763,12 @@ html:not(.js) .intro,.intro-done .intro{display:none}
 <aside class="at-card"><span class="at-ph"><img src="assets/img/loukia-micheli-psychologos-paignotherapeftria-360.webp" width="360" height="360" loading="lazy" alt="Λουκία Μιχέλη, ψυχολόγος – παιγνιοθεραπεύτρια"></span><div><p class="kick">Η συγγραφέας</p><b>Λουκία Μιχέλη</b>
 <p>Ψυχολόγος – παιγνιοθεραπεύτρια. Εργάζεται με παιδιά και ενήλικες στη Νέα Ιωνία, μαζί με τον ψυχολόγο – ψυχοθεραπευτή Γιάννης Μανιός.</p>
 <div class="at-ct"><a class="btn sm" href="tel:+306976157089"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.4a11.5 11.5 0 0 0 7 7l1.4-2.3L21 15.5V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>697 615 7089</span></a><a class="tl" href="index.html#gnoriste">Γνωρίστε μας <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></aside>
-<nav class="at-more" aria-label="Περισσότερα άρθρα"><p class="kick">Περισσότερα άρθρα</p><ul><li style="--c:#D9A441"><a href="arthro-aftoektimisi.html"><span class="ar-tag">Ανάπτυξη</span><b>Αυτοεκτίμηση</b><span class="ar-m">5′ ανάγνωση <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li style="--c:#C2603F"><a href="arthro-sygkrouseis-stin-oikogeneia.html"><span class="ar-tag">Οικογένεια</span><b>Συγκρούσεις στην οικογένεια</b><span class="ar-m">8′ ανάγνωση <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li style="--c:#8A5C7C"><a href="arthro-paignotherapeia-kai-siopi.html"><span class="ar-tag">Παιγνιοθεραπεία</span><b>Η μη κατευθυντική παιγνιοθεραπεία συναντά τη σιωπή</b><span class="ar-m">6′ ανάγνωση <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li></ul></nav>
+<nav class="at-more" aria-label="Περισσότερα άρθρα"><p class="kick">Περισσότερα άρθρα</p><ul><li style="--c:#2B5F66"><a href="arthro-skepseis-scholiki-chronia.html"><span class="ar-tag">Σχολείο & γονείς</span><b>Κάποιες σκέψεις με αφορμή την έναρξη της σχολικής χρονιάς</b><span class="ar-m">3′ ανάγνωση <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li style="--c:#D9A441"><a href="arthro-aftoektimisi.html"><span class="ar-tag">Ανάπτυξη</span><b>Αυτοεκτίμηση</b><span class="ar-m">5′ ανάγνωση <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li style="--c:#C2603F"><a href="arthro-sygkrouseis-stin-oikogeneia.html"><span class="ar-tag">Οικογένεια</span><b>Συγκρούσεις στην οικογένεια</b><span class="ar-m">8′ ανάγνωση <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li style="--c:#8A5C7C"><a href="arthro-paignotherapeia-kai-siopi.html"><span class="ar-tag">Παιγνιοθεραπεία</span><b>Η μη κατευθυντική παιγνιοθεραπεία συναντά τη σιωπή</b><span class="ar-m">6′ ανάγνωση <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li></ul></nav>
 </article></main>
 <footer class="ft"><div class="wrap ft-in">
 <a class="brand" href="index.html" aria-label="Μανιός · Μιχέλη — αρχή σελίδας" data-en-aria="Manios · Micheli — back to top"><svg class="lg" viewBox="0 0 120 120" aria-hidden="true"><use href="#mk"/></svg><span class="bt"><span class="bn" data-en="Manios · Micheli">Μανιός · Μιχέλη</span><span class="br" data-en="Psychologists · Nea Ionia">Ψυχολόγοι · Νέα Ιωνία</span></span></a>
 <nav class="ft-n" aria-label="Υποσέλιδο" data-en-aria="Footer"><a href="index.html#gnoriste" data-en="About us">Γνωρίστε μας</a><a href="index.html#ypiresies" data-en="Services">Υπηρεσίες</a><a href="index.html#paichnidi" data-en="Play therapy">Παιγνιοθεραπεία</a><a href="index.html#omades" data-en="Parent groups">Ομάδες γονέων</a><a href="index.html#arthra" data-en="Articles">Άρθρα</a><a href="index.html#epikoinonia" data-en="Contact">Επικοινωνία</a></nav>
-<p class="ft-c"><span data-en="10 Omirou St, 142 33 Nea Ionia">Ομήρου 10, 142 33 Νέα Ιωνία</span> · <span data-en="Giannis">Γιάννης</span> <a href="tel:+306979807523">697 980 7523</a> · <span data-en="Loukia">Λουκία</span> <a href="tel:+306976157089">697 615 7089</a></p>
+<p class="ft-c"><span data-en="10 Omirou St, 142 33 Nea Ionia">Ομήρου 10, 142 33 Νέα Ιωνία</span> · <span data-en="Giannis">Γιάννης</span> <a href="tel:+306979807523">697 980 7523</a> · <span data-en="Loukia">Λουκία</span> <a href="tel:+306976157089">697 615 7089</a> · <span data-en="Landline">Σταθερό</span> <a href="tel:+302110102724">211 010 2724</a></p>
 <p class="ft-b">© 2026 <span data-en="Giannis Manios &amp; Loukia Micheli">Γιάννης Μανιός &amp; Λουκία Μιχέλη</span> · <a href="privacy.html" data-en="Privacy &amp; cookies">Απόρρητο &amp; cookies</a> · <a class="adv-l" href="https://advonmedia.com" target="_blank" rel="noopener">Designed by <b class="adv">Advon Media</b></a></p>
 </div></footer>
 <nav class="mbar" aria-label="Γρήγορες ενέργειες" data-en-aria="Quick actions"><a href="tel:+306979807523"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.4a11.5 11.5 0 0 0 7 7l1.4-2.3L21 15.5V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span data-en="Giannis">Γιάννης</span></a><a href="tel:+306976157089"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.4a11.5 11.5 0 0 0 7 7l1.4-2.3L21 15.5V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span data-en="Loukia">Λουκία</span></a><a href="https://www.google.com/maps/dir/?api=1&destination=38.0367856,23.7577649" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8z"/></svg><span data-en="Directions">Οδηγίες</span></a></nav>
