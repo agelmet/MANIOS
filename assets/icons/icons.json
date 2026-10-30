@@ -1,0 +1,16 @@
+{
+ "source": {
+  "kind": "file",
+  "ref": "assets/img/manios-micheli-psychologoi-icon.svg"
+ },
+ "source_md5": "98badc2db8df3cf3629df6b7efa0c04b",
+ "version": "b45feb01",
+ "tile": null,
+ "crop": null,
+ "header": [
+  "inline",
+  "index.html",
+  "edc61bcfbdd510ccce7f24469d6d25cf"
+ ],
+ "made": "2026-10-30"
+}
